@@ -32,9 +32,14 @@
 npm i typescript -g
 ```
 
+## 샘플 코드 복사
+* workspace 폴더로 sample 폴더 복사해서 실습 진행
+* 완성된 강사의 코드는 workspace-ins 폴더에서 확인
+### 1일차
+* sample/day1 폴더 내부의 파일과 폴더를 workspace 폴더에 복사
+
 ## 터미널 테스트
-* 프로젝트 내에 workspace 폴더 생성
-* hello.ts 파일 작성
+* workspace/ch01/ex01-01.ts 파일 작성
 ```
 function hello(name: string): string {
   return 'Hello ' + name;
@@ -50,15 +55,8 @@ tsc hello.ts
 node hello.js
 ```
 
-## 샘플 코드 복사
-* workspace 폴더로 sample 폴더 복사해서 실습 진행
-* 완성된 강사의 코드는 workspace-ins 폴더에서 확인
-### 1일차
-* sample/day1 폴더 내부의 파일과 폴더를 workspace 폴더에 복사
-
 ## 브라우저 테스트
-* VSCode 터미널에서 workspace 폴더로 이동 후 실행
-  - 강사의 완성된 코드를 테스트하려면 workspace-ins 폴더로 이동
+* 강사의 완성된 코드를 테스트하려면 workspace-ins 폴더로 이동
 
 ### 타입스크립트 설정 파일
 * 타입스크립트 설정 파일(tsconfig.json) 생성
@@ -88,5 +86,5 @@ npx serve .
 
 ## 소스코드 공유
 * 본인의 소스코드를 강사에게 공유하고 싶을때
-* StackBlitz: https://stackblitz.com 접속 후 문제 있는 소스코드 붙여넣기
+* StackBlitz: https://stackblitz.com 접속 후 문제 있는 소스코드 붙여 넣은 후 채팅창에 url 입력
 
