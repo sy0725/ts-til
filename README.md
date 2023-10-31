@@ -65,7 +65,9 @@ node hello.js
 ```
 tsc --init
 ```
-* tsconfig.json 파일의 "outDir": "./" 주석 해제 후 "outDir": "./dist"로 수정
+* tsconfig.json 파일 수정
+  - "rootDir": "./" 주석 해제
+  - "outDir": "./" 주석 해제 후 "outDir": "./dist"로 수정
 
 ### tsc --watch 옵션
 * 하위 폴더를 포함해서 ts 파일 변경을 감지하고 자동으로 컴파일한 후 outDir로 지정한 폴더에 js 파일 생성
