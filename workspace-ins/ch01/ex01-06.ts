@@ -2,7 +2,7 @@
 // ex01-05.ts 복사
 (()=>{
   type Message = string | number;
-  function log(msg: Message){
+  function log(msg: Message): void{
     console.log(msg);
   }
   var msg1: Message = 'world';
