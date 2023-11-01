@@ -5,6 +5,7 @@
     content: string;
   };
 
+  // Todo 타입 확장
   type TodoInfo = Todo & {
     _id: number;
     done: boolean;
