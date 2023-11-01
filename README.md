@@ -177,7 +177,7 @@ module.exports = {
     "no-var": "off",
     "prefer-const": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
-    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-inferrable-types": "off"
   }
 }
