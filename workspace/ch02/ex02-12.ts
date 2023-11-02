@@ -9,21 +9,19 @@
     }
   }
 
-  var sq = new Queue();
+  var sq = new Queue<string>();
   sq.push("hello");
   sq.push("javascript");
   sq.push("world");
-
   var s1 = sq.pop();
   var s2 = sq.pop();
   var s3 = sq.pop();
   console.log(s1, s2, s3);
 
-  var nq = new Queue();
-  nq.push("hello");
-  nq.push("javascript");
-  nq.push("world");
-
+  var nq = new Queue<number>();
+  nq.push(100);
+  nq.push(200);
+  nq.push(300);
   var n1 = nq.pop();
   var n2 = nq.pop();
   var n3 = nq.pop();
