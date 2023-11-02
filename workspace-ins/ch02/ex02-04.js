@@ -1,8 +1,8 @@
 // ex02-01.js 복사
 (()=>{
   class HighSchool{
-    #kor = 0;
-    #eng = 0;
+    #kor;
+    #eng;
     constructor(kor, eng){
       this.#kor = kor;
       this.#eng = eng;
