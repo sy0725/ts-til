@@ -28,4 +28,16 @@
   const result3 = fn(10);
   const result4 = fn(20);
   const result5 = fn(30);
+
+  interface A {
+    a: string;
+    b: "hello";
+    c: "world";
+  }
+
+  const a: A = {
+    a: "bye",
+    b: "hello",
+    c: "world",
+  };
 })();
