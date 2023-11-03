@@ -17,9 +17,14 @@
 
   function printUser(user: User | UnknownUser | AdminUser) {
     // User 타입일 경우 나이 출력
-    if ("age" in user && typeof user.age === "number") {
-      console.log((user as User).nickname);
+    if (isUser(user)) {
+      console.log(user.nickname);
     }
+  }
+
+  // 타입 가드 함수
+  function isUser(user: User | UnknownUser | AdminUser): user is User {
+    return typeof (user as User).age === "number";
   }
 
   printUser(kim);
