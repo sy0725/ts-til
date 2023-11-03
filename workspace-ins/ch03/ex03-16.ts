@@ -21,7 +21,11 @@
 
   function getTitle(todo: Todo | string[]){
     // 타입 가드를 적용해서 title값을 리턴하는 함수 작성
-    
+    if(todo instanceof Todo){
+      return todo.getTitle();
+    }else if(todo instanceof Array){
+      return todo[0];
+    }
   }
 
   const todo1 = new Todo('할일 1', '내용 1');
