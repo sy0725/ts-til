@@ -29,5 +29,16 @@
     done: false
   };
 
+  function printTodo(todo: TodoRegist | TodoInfo){
+    if('_id' in todo){
+      console.log(`[TodoInfo] _id: ${todo._id}, title: ${todo.title}`);
+    }else{
+      console.log(`[TodoRegist] title: ${todo.title}`);
+    }
+  }
+
+  printTodo(todo1);
+  printTodo(todo2);
+
   console.log(todo1, todo2, todo3);
 })();
